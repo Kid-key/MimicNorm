@@ -18,7 +18,7 @@ This project tests MimicNorm on Cifar and ImageNet dataset with various network 
 
 ## 3. Dependencies
 
-For experiments in cifar dataset, pytorch and torchvision is enough to run this project. As for imagenet, we use LMDB (https://github.com/xunge/pytorch_lmdb_imagenet) to accelerate IO thoughtout. pyarrows lmdb pandas of appropriate version should to be installed to use LMDB. If you don't use LMDB, a slight modified in `ImgageNet/data_loader.py` will work.
+For experiments in cifar dataset, pytorch and torchvision is enough to run this project. As for imagenet, we use LMDB (https://github.com/xunge/pytorch_lmdb_imagenet) to accelerate IO read. pyarrows, lmdb, pandas of appropriate version should to be installed to use LMDB. If you don't use LMDB, a slight modification in `ImgageNet/data_loader.py` will work.
 
 Here is an example of create environ **from scratch** with `anaconda`
 
