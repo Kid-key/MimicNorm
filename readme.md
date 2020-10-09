@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This project tests MimicNorm on Cifar and ImageNet dataset with various network structures, including VGGs, ResNets, efficient networks. MimicNorm achieves similar accuracy with less memory consumption. There are other benefits to replace BN layers. Please refer to [our paper](https://arxiv.org/abs/ )
+This project tests MimicNorm on Cifar and ImageNet dataset with various network structures, including VGGs, ResNets, efficient networks. MimicNorm achieves similar accuracy with less memory consumption. There are other benefits to replace BN layers. Please refer to our paper (aaai2021 under review).
 
 
 ## 2. Performance
