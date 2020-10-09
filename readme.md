@@ -68,6 +68,4 @@ Some network architectures have been implemented but not tested, like densenets 
 - [pytorch-cifar100](https://github.com/weiaicunzai/pytorch-cifar100) (cifar implementation)
 - [ShuffleNetv2 in PyTorch](https://github.com/Randl/ShuffleNetV2-pytorch) (shufflenetv2 implementaion for imagenet dataset)
 
-2, HUAWEI supports this project.
-
 
