@@ -168,9 +168,9 @@ class ResNet(nn.Module):
         layers = []
         layers.append(block(self.in_channels, out_channels, stride))
         self.in_channels = out_channels * block.expansion
-        self.inplanes = planes * block.expansion
+        self.inplanes = out_channels * block.expansion
         for _ in range(1, num_blocks):
-            layers.append(block(self.inplanes, planes))
+            layers.append(block(self.inplanes, out_channels))
             #self.inplanes = planes * block.expansion
         
         return nn.Sequential(*layers)
