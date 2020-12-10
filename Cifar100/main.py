@@ -75,9 +75,9 @@ def train(epoch,net,optimizer,warmup_scheduler):
         optimizer.step()
         n_iter = (epoch - 1) * len(cifar_training_loader) + batch_index + 1
 
-        outputs = net(images)
-        loss = loss_function(outputs, labels)
-        _, preds = outputs.max(1)
+        #outputs = net(images)
+        #loss = loss_function(outputs, labels)
+        #_, preds = outputs.max(1)
 
         last_layer = list(net.children())[-1]
         correct1 += preds.eq(labels).sum()
