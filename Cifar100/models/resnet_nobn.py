@@ -64,7 +64,7 @@ class BasicBlock(nn.Module):
         if stride != 1 or in_channels != BasicBlock.expansion * out_channels:
             self.shortcut = nn.Sequential(
                 nn.Conv2d(in_channels, out_channels * BasicBlock.expansion, kernel_size=1, stride=stride, bias=True),
-                MyPassLayer() # nn.BatchNorm2d(out_channels * BasicBlock.expansion)
+                # MyPassLayer() # nn.BatchNorm2d(out_channels * BasicBlock.expansion)
             )
         
     def forward(self, x):
@@ -97,7 +97,7 @@ class BottleNeck(nn.Module):
         if stride != 1 or in_channels != out_channels * BottleNeck.expansion:
             self.shortcut = nn.Sequential(
                 nn.Conv2d(in_channels, out_channels * BottleNeck.expansion, stride=stride, kernel_size=1, bias=False),
-                MyPassLayer()
+                # MyPassLayer()
             )
         
     def forward(self, x):
